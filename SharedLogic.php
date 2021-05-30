@@ -5,7 +5,7 @@ require_once('ElectronicItems.php');
 
 abstract Class SharedLogic extends ElectronicItem{
 
-    private $allowedNumOfExtras ;
+    private $allowedNumOfExtras = null;
     private $extras = array();
     private $numOfExtras = 0 ;
 
@@ -25,7 +25,7 @@ abstract Class SharedLogic extends ElectronicItem{
         }
     }
 
-    protected function setAllowedNumberOfExtras($allowedNumOfExtras = null){
+    protected function setAllowedNumberOfExtras($allowedNumOfExtras){
         $this->allowedNumOfExtras = $allowedNumOfExtras;
     }
 /**
