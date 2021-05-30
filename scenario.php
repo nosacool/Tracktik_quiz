@@ -39,17 +39,21 @@ $consoleController_4->setWired('wired'); // Sets 4th Console Controller to be Wi
 $console->addExtras($consoleController_4); //Adding 4th Console Controller as an Extra to Console 
 //echo "Console costs: ".$console->getPrice().'\n';
 
+
 $totalCost+=$console->getPrice(); // Getting the Total Price of Console and Adding it to totalPrice
+
 //New Item 1st Television
 $television_1 = New Television(); //Initialize 1st Television Object 
 $television_1->setPrice(300); //Sets 1st Television price
+
+
 
 $television1Controller1 = New Controller(); //Initialize 1st Television 1st Controller
 $television1Controller1->setPrice(10); //Sets Price for 1st Television 1st Controller
 $television1Controller1->setWired('remote'); //Sets 1st Television 1st Controller to be Remote
 
 $television_1->addExtras($television1Controller1); //Adding 1st Controller as an Extra to Television_1 
-
+print_r($television_1);
 $television1Controller2 = New Controller(); //Initialize 1st Television 2nd Controller
 $television1Controller2->setPrice(20); //Sets Price for 1st Television 2nd Controller
 $television1Controller2->setWired('remote'); //Sets 1st Television 2nd Controller to be Remote
@@ -72,6 +76,7 @@ $totalCost+=$television_2->getPrice(); // Getting Total Price of Television 2 an
 $microwave = New Microwave(); //Initialize Microwave Object
 $microwave->setPrice(5); //Sets Microwave Price
 $totalCost+=$microwave->getPrice(); // Getting Total Price of Microwave and Adding it to totalPrice
+
 
 $allItems = New ElectronicItems([$console,$television_1,$television_2,$microwave]); //Initialize an ElectronicItems Object with All 4 Items
 

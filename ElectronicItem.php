@@ -18,7 +18,7 @@ class ElectronicItem
  const ELECTRONIC_ITEM_CONSOLE = 'console';
  const ELECTRONIC_ITEM_MICROWAVE = 'microwave';
 
- public static $types = array(self::ELECTRONIC_ITEM_CONSOLE,
+ public static $types = array(self::ELECTRONIC_ITEM_CONSOLE,      // Changed to public static 
  self::ELECTRONIC_ITEM_MICROWAVE, self::ELECTRONIC_ITEM_TELEVISION);
 
  function getPrice()
