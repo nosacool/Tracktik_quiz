@@ -15,21 +15,21 @@ $consoleController_1->setPrice(20); // Sets 1st Console Controller Price
 $consoleController_1->setWired('remote'); // Sets Console Controller to be Remote
 
 $console->addExtras($consoleController_1); //Adding 1st Console Controller as an Extra to Console 
-//echo "Console costs: ".$console->getPrice().'\n';
+
 
 $consoleController_2 = New Controller(); //Initialize 2nd Console Controller 
 $consoleController_2->setPrice(20); // Sets 2nd Console Controller Price
 $consoleController_2->setWired('remote'); // Sets 2nd Console Controller to be Remote
 
 $console->addExtras($consoleController_2); //Adding 2nd Console Controller as an Extra to Console 
-//echo "Console costs: ".$console->getPrice().'\n';
+
 
 $consoleController_3 = New Controller(); //Initialize 3rd Console Controller 
 $consoleController_3->setPrice(30); // Sets 3rd Console Controller Price
 $consoleController_3->setWired('wired'); // Sets 3rd Console Controller to be Wired
 
 $console->addExtras($consoleController_3); //Adding 3rd Console Controller as an Extra to Console 
-//echo "Console costs: ".$console->getPrice().'\n';
+
 
 
 $consoleController_4 = New Controller(); //Initialize 4th Console Controller 
@@ -37,7 +37,7 @@ $consoleController_4->setPrice(40); // Sets 4th Console Controller Price
 $consoleController_4->setWired('wired'); // Sets 4th Console Controller to be Wired
 
 $console->addExtras($consoleController_4); //Adding 4th Console Controller as an Extra to Console 
-//echo "Console costs: ".$console->getPrice().'\n';
+
 
 
 $totalCost+=$console->getPrice(); // Getting the Total Price of Console and Adding it to totalPrice
