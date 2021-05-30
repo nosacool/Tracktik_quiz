@@ -13,7 +13,7 @@ class ElectronicItems
 
  /**
  * Returns the items depending on the sorting type requested
- *
+ * @params type :- accepts a string type
  * @return array
  */
  public function getSortedItems($type)
@@ -27,7 +27,7 @@ class ElectronicItems
  }
  
   ksort($sorted, SORT_NUMERIC);
-  return (array_values($sorted));
+  return (array_values($sorted)); // return the array_values of sorted items according to the type
  }
 
  /**
@@ -48,7 +48,7 @@ class ElectronicItems
  };
 
  $items = array_filter($this->items, $callback);
- return $items;
+ return $items; 
  }
 
  return false;

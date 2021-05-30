@@ -39,6 +39,7 @@ $consoleController_4->setWired('wired'); // Sets 4th Console Controller to be Wi
 $console->addExtras($consoleController_4); //Adding 4th Console Controller as an Extra to Console 
 //echo "Console costs: ".$console->getPrice().'\n';
 
+
 $totalCost+=$console->getPrice(); // Getting the Total Price of Console and Adding it to totalPrice
 //New Item 1st Television
 $television_1 = New Television(); //Initialize 1st Television Object 

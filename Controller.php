@@ -9,16 +9,20 @@ private $extras = array();
 private $numOfExtras = 0 ;
 const AllowedNumOfExtras = 0;
 
+
 public function __construct()
  {
-   $this->setType('controller');
+   $this->setType('controller'); //Sets type to be Controller as soon as object is initialized.
  }
-
+/**
+ *
+ * @return boolean If it return True it means it has reached the maximum amount of extras else If False, It can still accept more extras
+ */
 public function maxExtras(){
         if(($this->numOfExtras < self::AllowedNumOfExtras)){
-            return false; // Has not maxed out number of extras allowed so can proceed to add extras.
+            return false; 
         }
-        return true;  //// Has maxed out number of extras allowed so cannot proceed to add extras.
+        return true;  
 }
 // It was stated that Controllers will have no extras so the function to add extras is commented out.
 /*public function addExtras(ElectronicItem $extra){
