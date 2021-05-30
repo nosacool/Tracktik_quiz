@@ -11,7 +11,7 @@ private $numOfExtras = 0 ;
 public function __construct()
  {
 
-   $this->setType('television');
+   $this->setType('television'); //setting the type to be a television on initialization
  }
 
 public function maxExtras(){

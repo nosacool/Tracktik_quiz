@@ -20,7 +20,7 @@ public function maxExtras(){
         }
         return true;  //// Has maxed out number of extras allowed so cannot proceed to add extras.
 }
-
+// It was stated that Controllers will have no extras so the function to add extras is commented out.
 /*public function addExtras(ElectronicItem $extra){
     if(!$this->maxExtras()){
         $this->extras[] = $extra;

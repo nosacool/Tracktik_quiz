@@ -11,7 +11,7 @@ const AllowedNumOfExtras = 0;
 
 public function __construct()
  {
-   $this->setType('microwave');
+   $this->setType('microwave'); // Sets the type to 'microwave'
  }
 
 public function maxExtras(){
@@ -21,6 +21,7 @@ public function maxExtras(){
         return true;  //// Has maxed out number of extras allowed so cannot proceed to add extras.
 }
 
+// It was stated that Microwaves will have no extras so the function to add extras is commented out.
 /*public function addExtras(ElectronicItem $extra){
     if(!$this->maxExtras()){
         $this->extras[] = $extra;
