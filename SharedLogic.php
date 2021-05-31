@@ -11,7 +11,7 @@ abstract Class SharedLogic extends ElectronicItem{
 
     /**
  * maxExtras limits the number of extras an electronic item can have
- * @return boolean If it return True it means it has reached the maximum amount of extras else If False, It can still accept more extras
+ * @return boolean If it returns True it means it has reached the maximum amount of extras else If False, It can still accept more extras
  */
     public function maxExtras(){
         if($this->getType() == 'television'){
@@ -24,7 +24,10 @@ abstract Class SharedLogic extends ElectronicItem{
             return true;
         }
     }
-
+ /**
+ * Sets the number of extras the object is supposed to have to allowedNumOfExtras variable 
+ * 
+ */
     protected function setAllowedNumberOfExtras($allowedNumOfExtras){
         $this->allowedNumOfExtras = $allowedNumOfExtras;
     }
