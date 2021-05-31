@@ -9,7 +9,7 @@ Class Microwave extends SharedLogic {
 public function __construct()
  {
    $this->setType('microwave'); // Sets the type to 'microwave'
-   $this->setAllowedNumberOfExtras(0);
+   $this->setAllowedNumberOfExtras(0);// Sets allowed number of Extras to be 0
  }
 
 }
